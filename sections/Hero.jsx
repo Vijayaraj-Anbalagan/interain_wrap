@@ -16,7 +16,7 @@ const Hero = () => (
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <div className="flex justify-center items-center flex-col relative z-10">
-          <motion.h1 variants={textVariant(1.1)} className="text-white font-bold items-center text-center md:text-6xl text-[34px] my-auto md:text-[56px] mt-6">
+          <motion.h1 variants={textVariant(1.1)} className="text-white font-bold items-center text-center md:text-6xl text-[30px] my-auto md:text-[56px] mt-6">
             Unlock Your Potential
           </motion.h1>
           <motion.div
