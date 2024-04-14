@@ -17,7 +17,10 @@ const Footer = () => (
       viewport={{ once: false, amount: 0.25 }}
       className="pt-11 flex items-center justify-center"
     >
-      <div className="w-[90%] flex items-center justify-center flex-col md:flex-row">
+      <motion.div
+        variants={textVariant(1.1)}
+        className="w-[90%] flex items-center justify-center flex-col md:flex-row"
+      >
         <div className="">
           <Image
             src="/Interain_black_bg.png"
@@ -116,7 +119,7 @@ const Footer = () => (
             Join Our Community
           </motion.button>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
     <svg
       className="hidden md:block mt-5 md:w-[90%] lg:w-[80%] mx-auto"
