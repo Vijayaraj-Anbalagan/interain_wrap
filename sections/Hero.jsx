@@ -6,7 +6,7 @@ import styles from '../styles';
 import { staggerContainer, textVariant } from '../utils/motion';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings}`}>
+  <section className={`${styles.yPaddings} mb-16 mt-6`}>
     <div>
       <motion.div
         variants={staggerContainer}
@@ -16,7 +16,7 @@ const Hero = () => (
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <div className="flex justify-center items-center flex-col relative z-10">
-          <motion.h1 variants={textVariant(1.1)} className="text-white font-bold items-center text-center md:text-6xl text-[34px] my-auto md:text-[56px]">
+          <motion.h1 variants={textVariant(1.1)} className="text-white font-bold items-center text-center md:text-6xl text-[34px] my-auto md:text-[56px] mt-6">
             Unlock Your Potential
           </motion.h1>
           <motion.div
@@ -30,7 +30,7 @@ const Hero = () => (
                 <span>n</span>
               </div>
               <div>
-                <div className="text-gray-400 text-[15px] mt-1 mx-2 md:text-[20px] "> Where AI meets Interview Excellence
+                <div className="text-gray-400 text-[15px] mt-4 mx-2 md:text-[20px] "> Where AI meets Interview Excellence
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@ const Hero = () => (
           variants={textVariant(1.3)}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="inline-flex h-12 animate-shimmer items-center justify-center border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 self-center bg-purple border-transparent rounded-md px-6 py-3 mt-6 hover:bg-transparent hover:text-purple hover:border-purple hover:shadow-inner focus:ring-purple-500 focus:ring-opacity-50"
+          className="inline-flex h-12 animate-shimmer items-center justify-center border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 self-center bg-purple border-transparent rounded-md px-6 py-3 mt-6 mb-10 hover:bg-transparent hover:text-purple hover:border-purple hover:shadow-inner focus:ring-purple-500 focus:ring-opacity-50"
         >
           Get Started
         </motion.button>
